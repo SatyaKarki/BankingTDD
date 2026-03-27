@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src\TDDTest.Domain\TDDTest.Domain.csproj" />
+    <Project Path="src\TDDTest.Application\TDDTest.Application.csproj" />
+    <Project Path="src\TDDTest.Infrastructure\TDDTest.Infrastructure.csproj" />
+    <Project Path="src\TDDTest.API\TDDTest.API.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests\TDDTest.Domain.Tests\TDDTest.Domain.Tests.csproj" />
+    <Project Path="tests\TDDTest.Application.Tests\TDDTest.Application.Tests.csproj" />
+    <Project Path="tests\TDDTest.API.Tests\TDDTest.API.Tests.csproj" />
+  </Folder>
+</Solution>
