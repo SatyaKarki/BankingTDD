@@ -1,3 +1,5 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using TDDTest.Application;
 using TDDTest.Infrastructure;
 using TDDTest.API.Middleware;
@@ -10,6 +12,10 @@ builder.Services.AddInfrastructure();
 
 // ── MVC Controllers ──────────────────────────────────────────────────────────
 builder.Services.AddControllers();
+
+// ── FluentValidation ─────────────────────────────────────────────────────────
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 
 // ── Swagger / OpenAPI ────────────────────────────────────────────────────────
 builder.Services.AddEndpointsApiExplorer();
